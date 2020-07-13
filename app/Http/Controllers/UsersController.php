@@ -62,7 +62,7 @@ $commentsDB= DB::table('comments')
 
 
 
-return CommentResource::collection($commentsDB);
+return CommentResource::collection($commentsEloquent);
 } else {
 	return 'fail';
 }
